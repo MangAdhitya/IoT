@@ -1,33 +1,22 @@
-//--------------ABOUT AND COPYRIGHT----------------------
-// Copyright © 2013 SketchWork Productions Limited
-//       support@sketchworkdev.com
-//-------------------------------------------------------
 using UnityEngine;
 using System.Collections;
 
-
-/// <summary>
-/// This is the Heart Rate Monitor main script and controls every element of the control.
-/// </summary>
 public class SWP_HeartRateMonitor : MonoBehaviour
 {
     public GameObject hand;
     public int heartrate;
     enum SoundType {HeartBeat1, HeartBeat2, Flatline};
-    /// <HeartRateControl>
-    //public GameObject Heart_Text;
-    
-    /// </HeartRateControl>
+   
 	public int BeatsPerMinute =10; // Beats per minute.
-	public bool FlatLine = false; // Initialise a flat line.
+	public bool FlatLine = false; 
     
-    public bool ShowBlip = true; // Show the blip circle at the front of the monitor line.
-	public GameObject Blip; // The blip game object.
-	public float BlipSize = 1f; // The size of the blip circle at the front of the line.
-	public float BlipTrailStartSize = 0.2f; // The size of the monitor trail line nearest to the blip circle.
-	public float BlipTrailEndSize = 0.1f; // The size of the monitor line at the end before it fades out.
-	public float BlipMonitorWidth = 40f; // The actual width of the entire monitor control.
-	public float BlipMonitorHeightModifier = 1f; // The actual height of the entire monitor control.
+    public bool ShowBlip = true; 
+	public GameObject Blip; 
+	public float BlipSize = 1f; 
+	public float BlipTrailStartSize = 0.2f; 
+	public float BlipTrailEndSize = 0.1f; 
+	public float BlipMonitorWidth = 40f;
+	public float BlipMonitorHeightModifier = 1f;
 		
 	public bool EnableSound = true;
 	public float SoundVolume = 1f;
@@ -49,7 +38,7 @@ public class SWP_HeartRateMonitor : MonoBehaviour
 	public Color NormalColour = new Color(0f, 1f, 0f, 1f);
 	public Color MediumColour = new Color(1f, 1f, 0f, 1f);	
 	public Color BadColour = new Color(1f, 0f, 0f, 1f);
-	public Color FlatlineColour = new Color(1f, 0f, 0f, 1f); // Automatic when BeatsPerMinute is Zero
+	public Color FlatlineColour = new Color(1f, 0f, 0f, 1f);
 	
 	// Use this for initialization
 	void Start()
