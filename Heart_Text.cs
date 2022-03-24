@@ -17,10 +17,10 @@ public class Heart_Text : MonoBehaviour
 	string jsonRate;
 	WWW www;
     
-    // Use this for initialization
+    
     void Start()
     {
-		string url = "https://api.particle.io/v1/devices/230039000a47353138383138/rate?access_token=fc30489129ccbad879a2e3921485501418ada51c";
+		string url = "https://api.particle.io/v1/devices/230039000a47353138383138/rate?access_token=fc30489129ccbad879a2e3921485501418ada51c";// Settingan Api Untuk Hardware
 		www = new WWW(url);
 		StartCoroutine(WaitForRequest(www));
         heartrateInput = 74;
@@ -46,12 +46,12 @@ public class Heart_Text : MonoBehaviour
 		}    
 	}
 
-    // Update is called once per frame
+    
     void Update()
     {
 
-        //heartrate = GameBeat.GetComponent<IoT>().heartrate;
-		string url = "https://api.particle.io/v1/devices/230039000a47353138383138/rate?access_token=fc30489129ccbad879a2e3921485501418ada51c";
+        
+		string url = "https://api.particle.io/v1/devices/230039000a47353138383138/rate?access_token=fc30489129ccbad879a2e3921485501418ada51c";// Settingan Api Untuk Hardware
 		www = new WWW(url);
 		StartCoroutine(WaitForRequest(www));
 
