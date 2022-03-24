@@ -1,8 +1,3 @@
-// --------------ABOUT AND COPYRIGHT----------------------
-//  Copyright Â© 2013 SketchWork Productions Limited
-//        support@sketchworkproductions.com
-// -------------------------------------------------------
-
 using UnityEngine;
 using System.Collections;
 using UnityEditor;
@@ -12,7 +7,7 @@ public class SWP_HeartRateMonitorEditor : Editor
 {
 
 
-    /// 
+   
 	static public bool ShowHeader = true;
 	static public bool ShowTitles = true;
 	static public bool ShowQuickDebugControls = true;
@@ -89,9 +84,7 @@ public class SWP_HeartRateMonitorEditor : Editor
 		#else
 		EditorGUILayout.BeginVertical();
 #endif
-        //heartrate = Heart_Text.GetComponent<Heart_Text>().heartrate;
-        // _HeartRateMonitorScript.BeatsPerMinute = EditorGUILayout.IntSlider("Beats Per Minute", _HeartRateMonitorScript.BeatsPerMinute, 0, 240);
-        
+       
         _HeartRateMonitorScript.BeatsPerMinute = EditorGUILayout.IntSlider("Beats Per Minute", _HeartRateMonitorScript.heartrate, 0, 240);		
 		
 		#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_5_0
